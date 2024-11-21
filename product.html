@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="http://127.0.0.1:5500/index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="http://127.0.0.1:5500/product.html" target="_blank">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#" id="cart-icon"><i class="fas fa-cart-plus"> <span id="cart-count">0</span></i></a>
+    <div class="search-container">
+      <form action="javascript:void(0)">
+        <input type="text" id="search-bar" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="price-filter">
+    <label for="min-price">Min Price:</label>
+    <input type="number" id="min-price" placeholder="Min Price" value="0">
+    
+    <label for="max-price">Max Price:</label>
+    <input type="number" id="max-price" placeholder="Max Price" value="2000">
+    
+    <button id="filter-price">Filter</button>
+  </div>
+
+  <div class="bike"></div>
+
+<div class="modal" id="cart-modal">
+  <div class="modal-content">
+    <span class="close" id="close-modal">&times;</span>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>  
+    <div class="total-amount" id="total-amount">Total: 0 DT</div>
+    <button id="close-cart" style="color: #f1f1f1; background-color: #2f2f2f; padding: 5px; border-radius: 10px; margin: 10px;">Close</button>
+  </div>
+</div>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

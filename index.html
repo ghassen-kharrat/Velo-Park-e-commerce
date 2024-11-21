@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veloPark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="http://127.0.0.1:5500/login.html" target="_blank">Products</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-photos-container">
+        <div class="bg">
+            <img src="https://wallpaperaccess.com/full/3102904.jpg" alt="">
+        </div>
+
+        <div class="photos-container">
+            <button class="slider-btn left" onclick="moveSlider(-1)">&#10094;</button>
+            <div class="photos">
+                <img src="https://www.01net.com/app/uploads/2023/06/velo-tout-chemin-electrique-riverside-520-e-gris2-1792x1792.jpeg" alt="">
+                <img src="https://cdn.cleanrider.com/uploads/2021/08/mercedes-n-city-racer-01.jpg" alt="">
+                <img src="https://cdn.shoplightspeed.com/shops/625314/files/52390774/velec-r48-14ah-672wh-velos-electriques-sr.jpg" alt="">
+                <img src="https://www.hellovelo.co/wp-content/uploads/2018/07/Velo_VTT_Merida_2018_NINETY_SIX_7_600.jpg" alt="">
+            </div>
+            <button class="slider-btn right" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="homektiba" style="margin-top: 50px;">
+        <h1>Discover our bike</h1>
+        <p>Our products are the best</p>
+    </div>
+
+    <footer class="bg-dark text-white pt-4 pb-3" style="margin-top: 200px;bottom: 0; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We provide the best bikes and accessories to help you enjoy your ride. Our mission is to deliver high-quality products at the best prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="http://127.0.0.1:5500/login.html" target="_blank">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" class="text-white"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com" class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com" class="text-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mainIndex.js"></script>
+
+</body>
+</html>
